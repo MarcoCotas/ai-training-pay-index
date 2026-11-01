@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+title: "AI Training Pay Index"
+message: "If you use these figures, please cite them as below."
+type: dataset
+authors:
+  - name: "AI Work Central"
+    website: "https://aiworkcentral.com"
+url: "https://aiworkcentral.com/pay-index"
+repository-code: "https://github.com/MarcoCotas/ai-training-pay-index"
+license: CC-BY-4.0
+keywords:
+  - AI training
+  - data annotation
+  - pay
+  - jobs
+  - RLHF
+abstract: "Monthly median and quartiles of the hourly pay that AI training platforms list on their public job posts, by platform and by field."

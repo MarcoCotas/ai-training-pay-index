@@ -1,0 +1,28 @@
+name: update
+# Every Monday: copy the current Pay Index files from aiworkcentral.com, keep one file per monthly edition, commit if changed.
+on:
+  schedule:
+    - cron: "17 7 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download
+        run: |
+          set -euo pipefail
+          ua="ai-training-pay-index-repo (+https://github.com/MarcoCotas/ai-training-pay-index)"
+          curl -fsS -A "$ua" https://aiworkcentral.com/pay-index.csv -o /tmp/pay-index.csv
+          curl -fsS -A "$ua" https://aiworkcentral.com/pay-index-transparency.csv -o /tmp/pay-index-transparency.csv
+      - name: Check and place
+        run: python3 scripts/check_and_place.py /tmp/pay-index.csv /tmp/pay-index-transparency.csv
+      - name: Commit
+        run: |
+          git config user.name "ai-training-pay-index bot"
+          git config user.email "hello@aiworkcentral.com"
+          git add data
+          git diff --cached --quiet || git commit -m "data: pay index $(date -u +%F)"
+          git push

@@ -1,0 +1,44 @@
+# AI Training Pay Index
+
+What AI training platforms list as hourly pay for their open roles (rating model answers, writing expert examples,
+checking code, medical and legal review), by platform and by field. Monthly editions, measured from public job posts.
+
+Published by [AI Work Central](https://aiworkcentral.com), which reads the public job lists of 22 AI training platforms
+once a day. The page with charts, the method and the full notes: **https://aiworkcentral.com/pay-index**
+
+On 30 October 2026 the median listed hourly rate was **$55**, from 1,434 open roles that list an hourly rate.
+
+## Files
+
+| File | What it holds |
+|---|---|
+| `data/pay-index.csv` | The current edition: all platforms, by platform, by field, open to the EU or not, and platform by field |
+| `data/pay-index-transparency.csv` | For each platform: open roles, how many list any pay, how many list an hourly USD rate |
+| `data/editions/YYYY-MM.csv` | One file per monthly edition |
+
+Columns of `pay-index.csv`: `edition, as_of, section, name, field, open_roles, hourly_usd_rates, p25_usd, median_usd, p75_usd`.
+`hourly_usd_rates` is the number of listed hourly rates behind the figures. A platform line with fewer than 5 rates keeps
+its counts and leaves the quartiles empty.
+
+## How the numbers are made
+
+- Listed pay, not earnings: each posting counts at the midpoint of the hourly range it lists, or its single figure; a
+  posting that says "up to $X" counts at X.
+- A role a platform posts once per country counts once.
+- A range a platform puts on almost all of its roles (not the pay of any one role) is left out of the medians.
+- Hourly rates in USD only; per-task, yearly and other currencies are counted separately on the page.
+- Two platforms (Mercor and Terac) have no line of their own because their terms of use name benchmarking or
+  aggregation; their roles are in the totals.
+
+## Licence and how to cite
+
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Reuse, chart or republish freely with credit:
+
+> AI Work Central, AI Training Pay Index, <edition>, https://aiworkcentral.com/pay-index
+
+The licence covers these figures. Platform names belong to their owners and are not licensed.
+
+## Updates
+
+A GitHub Action copies the files from aiworkcentral.com every Monday and keeps each monthly edition. Questions or
+corrections: hello@aiworkcentral.com
