@@ -6,7 +6,7 @@ checking code, medical and legal review), by platform and by field. Monthly edit
 Published by [AI Work Central](https://aiworkcentral.com), which reads the public job lists of 22 AI training platforms
 once a day. The page with charts, the method and the full notes: **https://aiworkcentral.com/pay-index**
 
-On 30 October 2026 the median listed hourly rate was **$55**, from 1,434 open roles that list an hourly rate.
+The median listed hourly rate of each edition, with the number of rates behind it, is the `all` line of `pay-index.csv`; the page shows the same figures.
 
 ## Files
 
