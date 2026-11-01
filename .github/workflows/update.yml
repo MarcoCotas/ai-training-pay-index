@@ -6,6 +6,8 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+env:
+  HF_TOKEN: ${{ secrets.HF_TOKEN }}
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -26,3 +28,10 @@ jobs:
           git add data
           git diff --cached --quiet || git commit -m "data: pay index $(date -u +%F)"
           git push
+      - name: Copy to Hugging Face (only when the HF_TOKEN secret exists)
+        if: env.HF_TOKEN != ''
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          pip install --quiet huggingface_hub==0.26.2
+          python3 scripts/push_hf.py
