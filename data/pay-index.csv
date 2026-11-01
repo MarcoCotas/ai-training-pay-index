@@ -1,9 +1,9 @@
 edition,as_of,section,name,field,open_roles,hourly_usd_rates,p25_usd,median_usd,p75_usd
-2026-10,2026-10-30,all,All platforms,,2546,1434,21.7,55.0,90.0
-2026-10,2026-10-30,platform,micro1,,301,298,45.5,67.5,100.0
+2026-10,2026-10-30,all,All platforms,,2204,1164,20.0,40.0,75.0
+2026-10,2026-10-30,platform,micro1,,308,305,47.5,67.5,102.5
 2026-10,2026-10-30,platform,xAI,,22,22,40.0,40.0,57.5
 2026-10,2026-10-30,platform,Mindrift,,24,24,69.0,100.0,100.0
-2026-10,2026-10-30,platform,Welocalize,,317,91,8.5,15.0,24.5
+2026-10,2026-10-30,platform,Welocalize,,320,93,8.5,17.0,25.0
 2026-10,2026-10-30,platform,Appen,,44,7,33.75,36.0,42.75
 2026-10,2026-10-30,platform,Meridial,,569,54,20.0,23.25,60.0
 2026-10,2026-10-30,platform,Innodata,,26,25,15.0,15.0,20.0
@@ -21,19 +21,19 @@ edition,as_of,section,name,field,open_roles,hourly_usd_rates,p25_usd,median_usd,
 2026-10,2026-10-30,platform,Volga,,50,44,9.25,17.0,35.0
 2026-10,2026-10-30,platform,Alignerr,,3,3,,,
 2026-10,2026-10-30,platform,Turing,,9,2,,,
-2026-10,2026-10-30,field,Languages,,1124,411,11.0,20.82,35.0
-2026-10,2026-10-30,field,STEM,,346,217,50.0,69.0,90.0
-2026-10,2026-10-30,field,Generalist,,289,208,20.0,38.5,62.5
-2026-10,2026-10-30,field,Coding,,235,167,60.0,67.5,97.5
-2026-10,2026-10-30,field,Medicine,,149,116,67.5,100.0,150.0
-2026-10,2026-10-30,field,Law,,138,122,63.12,110.0,135.0
-2026-10,2026-10-30,field,Finance,,138,100,57.5,90.0,115.0
-2026-10,2026-10-30,field,Writing,,83,58,50.0,65.0,78.75
-2026-10,2026-10-30,field,Trades,,30,22,40.0,40.0,71.25
-2026-10,2026-10-30,field,Robotics,,14,13,9.0,11.0,20.0
-2026-10,2026-10-30,open_to_eu,yes,,1072,577,27.5,60.0,90.0
-2026-10,2026-10-30,open_to_eu,no,,1252,673,20.0,35.0,75.0
-2026-10,2026-10-30,open_to_eu,unknown,,222,184,55.0,75.0,105.0
+2026-10,2026-10-30,field,Languages,,1086,373,10.0,20.0,30.0
+2026-10,2026-10-30,field,STEM,,250,149,40.0,65.0,85.0
+2026-10,2026-10-30,field,Generalist,,225,163,15.0,25.0,55.0
+2026-10,2026-10-30,field,Coding,,184,124,60.0,65.0,90.0
+2026-10,2026-10-30,field,Medicine,,112,89,65.0,97.5,105.0
+2026-10,2026-10-30,field,Law,,121,105,60.0,110.0,145.0
+2026-10,2026-10-30,field,Finance,,116,83,40.0,90.0,115.0
+2026-10,2026-10-30,field,Writing,,69,45,45.5,65.0,70.0
+2026-10,2026-10-30,field,Trades,,28,20,40.0,40.0,52.5
+2026-10,2026-10-30,field,Robotics,,13,13,9.0,11.0,20.0
+2026-10,2026-10-30,open_to_eu,yes,,1067,577,27.5,60.0,90.0
+2026-10,2026-10-30,open_to_eu,no,,1120,583,16.0,26.0,65.0
+2026-10,2026-10-30,open_to_eu,unknown,,17,4,80.0,85.0,92.5
 2026-10,2026-10-30,platform_field,Anyone AI,Coding,17,16,62.5,62.5,63.12
 2026-10,2026-10-30,platform_field,Anyone AI,Finance,9,9,115.0,115.0,115.0
 2026-10,2026-10-30,platform_field,Anyone AI,STEM,21,21,40.0,40.0,45.0
@@ -46,14 +46,14 @@ edition,as_of,section,name,field,open_roles,hourly_usd_rates,p25_usd,median_usd,
 2026-10,2026-10-30,platform_field,Meridial,Generalist,14,10,20.0,20.0,20.0
 2026-10,2026-10-30,platform_field,Meridial,Languages,360,12,20.0,20.82,22.12
 2026-10,2026-10-30,platform_field,Meridial,Law,6,5,62.5,62.5,62.5
-2026-10,2026-10-30,platform_field,micro1,Coding,34,34,60.0,75.0,90.0
-2026-10,2026-10-30,platform_field,micro1,Finance,23,23,62.5,90.0,125.0
-2026-10,2026-10-30,platform_field,micro1,Generalist,45,43,35.0,50.0,60.0
+2026-10,2026-10-30,platform_field,micro1,Coding,37,37,60.0,75.0,90.0
+2026-10,2026-10-30,platform_field,micro1,Finance,24,24,63.75,90.0,160.62
+2026-10,2026-10-30,platform_field,micro1,Generalist,46,44,35.0,50.0,60.0
 2026-10,2026-10-30,platform_field,micro1,Languages,22,21,25.0,27.5,42.5
 2026-10,2026-10-30,platform_field,micro1,Law,62,62,68.12,120.0,270.0
 2026-10,2026-10-30,platform_field,micro1,Medicine,36,36,65.0,97.5,120.0
 2026-10,2026-10-30,platform_field,micro1,Robotics,10,10,9.25,17.0,21.88
-2026-10,2026-10-30,platform_field,micro1,STEM,38,38,61.25,77.5,92.5
+2026-10,2026-10-30,platform_field,micro1,STEM,40,40,60.0,70.0,92.5
 2026-10,2026-10-30,platform_field,micro1,Trades,15,15,40.0,40.0,55.0
 2026-10,2026-10-30,platform_field,micro1,Writing,16,16,60.0,68.75,72.5
 2026-10,2026-10-30,platform_field,Mindrift,Medicine,16,16,100.0,100.0,100.0
@@ -79,7 +79,7 @@ edition,as_of,section,name,field,open_roles,hourly_usd_rates,p25_usd,median_usd,
 2026-10,2026-10-30,platform_field,Weekday,Law,17,15,110.0,145.0,150.0
 2026-10,2026-10-30,platform_field,Weekday,Medicine,9,8,165.0,180.0,217.5
 2026-10,2026-10-30,platform_field,Weekday,STEM,17,12,30.0,30.0,52.5
-2026-10,2026-10-30,platform_field,Welocalize,Languages,296,85,8.5,17.0,25.0
+2026-10,2026-10-30,platform_field,Welocalize,Languages,298,87,8.75,18.0,25.0
 2026-10,2026-10-30,platform_field,xAI,Generalist,22,22,40.0,40.0,57.5
-2026-10,2026-10-30,headline,"Specialist fields, excluding Meridial",,821,693,57.5,80.0,110.0
-2026-10,2026-10-30,headline,"Generalist field, excluding Meridial",,275,198,20.0,40.0,64.38
+2026-10,2026-10-30,headline,"Specialist fields, excluding Meridial",,598,521,50.0,75.0,110.0
+2026-10,2026-10-30,headline,"Generalist field, excluding Meridial",,211,153,15.0,26.4,55.0
