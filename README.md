@@ -27,8 +27,8 @@ its counts and leaves the quartiles empty.
 - A role a platform posts once per country counts once.
 - A range a platform puts on almost all of its roles (not the pay of any one role) is left out of the medians.
 - Hourly rates in USD only; per-task, yearly and other currencies are counted separately on the page.
-- Two platforms (Mercor and Terac) have no line of their own because their terms of use name benchmarking or
-  aggregation; their roles are in the totals.
+- Two platforms (Mercor and Terac) are left out of every figure, totals included, because their terms of use name
+  benchmarking or aggregation.
 
 ## Licence and how to cite
 
