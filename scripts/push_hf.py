@@ -1,6 +1,9 @@
 """Copy the checked files to the Hugging Face mirror (AIWorkCentral/ai-training-pay-index). Runs only when the
 repository secret HF_TOKEN exists (the workflow skips this step otherwise). The token is read from the environment and
-never printed. Same files as the GitHub copy: hf/README.md (the dataset card) and the two CSV of data/."""
+never printed. Same files as the GitHub copy: hf/README.md (the dataset card), the two CSV of data/ and every frozen
+edition of data/editions/ (CSV, and JSON when there is one) as editions/<file>, so a new month reaches the mirror on the
+day it is frozen. python3 scripts/push_hf.py --dry-run lists the files without a token and pushes nothing."""
+import glob
 import os
 import sys
 
@@ -10,6 +13,12 @@ REPO = 'AIWorkCentral/ai-training-pay-index'
 FILES = (('hf/README.md', 'README.md'), ('data/pay-index.csv', 'pay-index.csv'),
          ('data/pay-index-transparency.csv', 'pay-index-transparency.csv'))
 
+FILES += tuple((f, 'editions/' + os.path.basename(f)) for f in sorted(glob.glob('data/editions/*.csv') + glob.glob('data/editions/*.json')))
+
+if '--dry-run' in sys.argv:
+    for src, dst in FILES:
+        print(f'{src} -> {dst}' + ('' if os.path.exists(src) else '  MISSING'))
+    sys.exit(0)
 token = os.environ.get('HF_TOKEN', '').strip()
 if not token:
     print('HF_TOKEN not set: nothing pushed')
